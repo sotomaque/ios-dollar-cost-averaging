@@ -15,6 +15,8 @@
 		34302F0226FA50CE003D8D48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34302F0026FA50CE003D8D48 /* LaunchScreen.storyboard */; };
 		34302F0A26FA511B003D8D48 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 34302F0926FA511B003D8D48 /* Podfile */; };
 		34302F0E26FA63D5003D8D48 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34302F0D26FA63D5003D8D48 /* SearchTableViewCell.swift */; };
+		34302F1126FA6897003D8D48 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34302F1026FA6897003D8D48 /* ApiService.swift */; };
+		34302F1426FA6A0D003D8D48 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34302F1326FA6A0D003D8D48 /* SearchResults.swift */; };
 		883981A6E6C46D6639435F89 /* Pods_ios_dollar_cost_averaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3816EC5ACC3AA7E77DD753D1 /* Pods_ios_dollar_cost_averaging.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		34302F0326FA50CE003D8D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34302F0926FA511B003D8D48 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		34302F0D26FA63D5003D8D48 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		34302F1026FA6897003D8D48 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		34302F1326FA6A0D003D8D48 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		3816EC5ACC3AA7E77DD753D1 /* Pods_ios_dollar_cost_averaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_dollar_cost_averaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E2D3621AA5A79FABE3C5BBB /* Pods-ios-dollar-cost-averaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-dollar-cost-averaging.release.xcconfig"; path = "Target Support Files/Pods-ios-dollar-cost-averaging/Pods-ios-dollar-cost-averaging.release.xcconfig"; sourceTree = "<group>"; };
 		FCF8BF020C79638CAD8FAF68 /* Pods-ios-dollar-cost-averaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-dollar-cost-averaging.debug.xcconfig"; path = "Target Support Files/Pods-ios-dollar-cost-averaging/Pods-ios-dollar-cost-averaging.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 		34302EF426FA50CD003D8D48 /* ios-dollar-cost-averaging */ = {
 			isa = PBXGroup;
 			children = (
+				34302F1226FA69FA003D8D48 /* Model */,
+				34302F0F26FA6886003D8D48 /* Service */,
 				34302F0C26FA63BB003D8D48 /* Controller */,
 				34302F0B26FA63B4003D8D48 /* View */,
 				34302EF526FA50CD003D8D48 /* AppDelegate.swift */,
@@ -94,6 +100,22 @@
 				34302EF926FA50CD003D8D48 /* SearchTableViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		34302F0F26FA6886003D8D48 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				34302F1026FA6897003D8D48 /* ApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		34302F1226FA69FA003D8D48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34302F1326FA6A0D003D8D48 /* SearchResults.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9E898609FA6908E7DCD01A98 /* Pods */ = {
@@ -230,8 +252,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				34302EFA26FA50CD003D8D48 /* SearchTableViewController.swift in Sources */,
+				34302F1126FA6897003D8D48 /* ApiService.swift in Sources */,
 				34302F0E26FA63D5003D8D48 /* SearchTableViewCell.swift in Sources */,
 				34302EF626FA50CD003D8D48 /* AppDelegate.swift in Sources */,
+				34302F1426FA6A0D003D8D48 /* SearchResults.swift in Sources */,
 				34302EF826FA50CD003D8D48 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
