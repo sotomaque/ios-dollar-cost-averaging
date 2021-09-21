@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		34302EF626FA50CD003D8D48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34302EF526FA50CD003D8D48 /* AppDelegate.swift */; };
 		34302EF826FA50CD003D8D48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34302EF726FA50CD003D8D48 /* SceneDelegate.swift */; };
-		34302EFA26FA50CD003D8D48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34302EF926FA50CD003D8D48 /* ViewController.swift */; };
+		34302EFA26FA50CD003D8D48 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34302EF926FA50CD003D8D48 /* SearchTableViewController.swift */; };
 		34302EFD26FA50CD003D8D48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34302EFB26FA50CD003D8D48 /* Main.storyboard */; };
 		34302EFF26FA50CE003D8D48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34302EFE26FA50CE003D8D48 /* Assets.xcassets */; };
 		34302F0226FA50CE003D8D48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34302F0026FA50CE003D8D48 /* LaunchScreen.storyboard */; };
 		34302F0A26FA511B003D8D48 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 34302F0926FA511B003D8D48 /* Podfile */; };
+		34302F0E26FA63D5003D8D48 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34302F0D26FA63D5003D8D48 /* SearchTableViewCell.swift */; };
 		883981A6E6C46D6639435F89 /* Pods_ios_dollar_cost_averaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3816EC5ACC3AA7E77DD753D1 /* Pods_ios_dollar_cost_averaging.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +22,13 @@
 		34302EF226FA50CD003D8D48 /* ios-dollar-cost-averaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-dollar-cost-averaging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34302EF526FA50CD003D8D48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34302EF726FA50CD003D8D48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		34302EF926FA50CD003D8D48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34302EF926FA50CD003D8D48 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		34302EFC26FA50CD003D8D48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34302EFE26FA50CE003D8D48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34302F0126FA50CE003D8D48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34302F0326FA50CE003D8D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34302F0926FA511B003D8D48 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		34302F0D26FA63D5003D8D48 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		3816EC5ACC3AA7E77DD753D1 /* Pods_ios_dollar_cost_averaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_dollar_cost_averaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E2D3621AA5A79FABE3C5BBB /* Pods-ios-dollar-cost-averaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-dollar-cost-averaging.release.xcconfig"; path = "Target Support Files/Pods-ios-dollar-cost-averaging/Pods-ios-dollar-cost-averaging.release.xcconfig"; sourceTree = "<group>"; };
 		FCF8BF020C79638CAD8FAF68 /* Pods-ios-dollar-cost-averaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-dollar-cost-averaging.debug.xcconfig"; path = "Target Support Files/Pods-ios-dollar-cost-averaging/Pods-ios-dollar-cost-averaging.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,9 +68,10 @@
 		34302EF426FA50CD003D8D48 /* ios-dollar-cost-averaging */ = {
 			isa = PBXGroup;
 			children = (
+				34302F0C26FA63BB003D8D48 /* Controller */,
+				34302F0B26FA63B4003D8D48 /* View */,
 				34302EF526FA50CD003D8D48 /* AppDelegate.swift */,
 				34302EF726FA50CD003D8D48 /* SceneDelegate.swift */,
-				34302EF926FA50CD003D8D48 /* ViewController.swift */,
 				34302EFB26FA50CD003D8D48 /* Main.storyboard */,
 				34302EFE26FA50CE003D8D48 /* Assets.xcassets */,
 				34302F0026FA50CE003D8D48 /* LaunchScreen.storyboard */,
@@ -77,13 +80,28 @@
 			path = "ios-dollar-cost-averaging";
 			sourceTree = "<group>";
 		};
+		34302F0B26FA63B4003D8D48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34302F0D26FA63D5003D8D48 /* SearchTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34302F0C26FA63BB003D8D48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34302EF926FA50CD003D8D48 /* SearchTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		9E898609FA6908E7DCD01A98 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				FCF8BF020C79638CAD8FAF68 /* Pods-ios-dollar-cost-averaging.debug.xcconfig */,
 				4E2D3621AA5A79FABE3C5BBB /* Pods-ios-dollar-cost-averaging.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,7 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34302EFA26FA50CD003D8D48 /* ViewController.swift in Sources */,
+				34302EFA26FA50CD003D8D48 /* SearchTableViewController.swift in Sources */,
+				34302F0E26FA63D5003D8D48 /* SearchTableViewCell.swift in Sources */,
 				34302EF626FA50CD003D8D48 /* AppDelegate.swift in Sources */,
 				34302EF826FA50CD003D8D48 /* SceneDelegate.swift in Sources */,
 			);
